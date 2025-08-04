@@ -2,9 +2,12 @@ from typing import Optional
 import os
 from mcp.server.fastmcp import FastMCP
 from pagos_client import PagosClient, EnhancedBinApiResponse
+from dotenv import load_dotenv
+
+# Load environment variables from .env file
+load_dotenv(override=True)
 
 mcp = FastMCP("bin-data")
-
 
 def format_bin_data(bin_data: Optional[EnhancedBinApiResponse]) -> str:
     if not bin_data or not bin_data.card:
@@ -203,5 +206,5 @@ async def get_bin_data_tool(bin: str) -> str:
     return format_bin_data(data)
 
 
-if __name__ == "__main__":
+def main():
     mcp.run(transport="stdio")
