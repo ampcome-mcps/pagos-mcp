@@ -1,5 +1,11 @@
 # Pagos Data MCP Server
 
+A dynamic MCP server for Pagos Data capabilities that retrieves BIN data for a given BIN number.
+
+<a href="https://glama.ai/mcp/servers/@ampcome-mcps/pagos-mcp">
+  <img width="380" height="200" src="https://glama.ai/mcp/servers/@ampcome-mcps/pagos-mcp/badge" alt="Pagos Data Server MCP server" />
+</a>
+
 ## Capabilities
 
 - Get BIN data for a given BIN number.
